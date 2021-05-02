@@ -1,0 +1,128 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>G-MOBILE STORE</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="datatables/jquery.dataTables.min.css" rel="stylesheet" />
+
+    <link href="fontawseome/fontawesome/css/all.css" rel="stylesheet" />
+
+    <script src="bootstrap/js/jquery.min.js"></script>
+
+    <script src="bootstrap/js/popper.min.js"></script>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+
+    
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body >
+
+  
+    
+    <form id="form1" runat="server">
+        <div >
+            <nav class="navbar navbar-expand-lg navbar-light bg-warning text-warning ml-auto">
+                
+
+                <a class="navbar-brand bg-warning" href="#">
+                    <i class="fab fa-fly fa-lg"></i>
+                    <b>
+                    G-MOBILE STORE</b>
+
+                </a>
+
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+
+       <div class="collapse navbar-collapse d-flex justify-content-end" id="mynav">
+    <ul class="navbar-nav">
+    
+      <li class="nav-item active ">
+        <a class="nav-link" href="homepage.aspx"><b>Home</b> <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#AboutUs"><b>AboutUs</b></a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#Services"><b>Products</b></a>
+        </li>
+       
+      <li class="nav-item">
+        <a class="nav-link" href="#ContactUs"><b>Contact Us</b></a>
+      </li>
+
+        
+       <li class="nav-item active ">
+         <asp:LinkButton class="nav-link" href="userlogin1.aspx" ID="LinkButton2" runat="server" ><b>User Login</b></asp:LinkButton>
+         </li>
+
+     <li class="nav-item active ">
+         <asp:LinkButton class="nav-link" href="usersignup.aspx" ID="LinkButton3" runat="server" ><b>Sign up</b></asp:LinkButton>
+         </li>
+
+     <li class="nav-item active ">
+         <asp:LinkButton class="nav-link btn btn-danger" ID="LinkButton4" runat="server" Visible="False" OnClick="LinkButton4_Click"><b>Logout</b></asp:LinkButton>
+         </li>
+     <li class="nav-item active ">
+         <asp:LinkButton class="nav-link" ID="LinkButton5" runat="server" Visible="False" OnClick="LinkButton5_Click"><b>Hello</b></asp:LinkButton>
+         </li>  
+
+
+    </ul>
+    
+
+ 
+     
+
+     
+
+
+  </div>
+    </nav>
+         
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--Content Placeholder -->
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+        </div>
+        
+        <footer>
+      <h2 class="p-3 bg-dark text-white text-center">@G-MOBILE</h2>
+            
+ </footer> 
+
+    </form>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
